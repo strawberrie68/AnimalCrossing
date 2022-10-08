@@ -1,6 +1,6 @@
 //load img
 
-const defulturl = "http://acnhapi.com/v1/songs/"
+const defulturl = "https://acnhapi.com/v1/songs/"
 
 fetch(defulturl)
 .then(res => res.json()) // parse response as JSON
@@ -43,7 +43,7 @@ document.querySelector('#random').addEventListener('click', getRandom)
 function getFetch(){
   const choice = document.querySelector('input').value
   console.log(choice)
-  const url = `http://acnhapi.com/v1/songs/${choice}`
+  const url = `https://acnhapi.com/v1/songs/${choice}`
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -65,7 +65,7 @@ function getFetch(){
 
 function getRandom(){
   let randomTrack = Math.floor(Math.random()*95)
-  const track = `http://acnhapi.com/v1/songs/${randomTrack}`
+  const track = `https://acnhapi.com/v1/songs/${randomTrack}`
 
   fetch(track)
       .then(res => res.json()) // parse response as JSON
@@ -89,7 +89,7 @@ document.addEventListener('click', (e) =>{
 //  if(elementP !== ''){
 //  console.log(elementP)
 // }
-const track = `http://acnhapi.com/v1/songs/${elementP}`
+const track = `https://acnhapi.com/v1/songs/${elementP}`
 
 fetch(track)
     .then(res => res.json()) // parse response as JSON

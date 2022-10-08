@@ -1,6 +1,6 @@
 //load img
 
-const defulturl = "https://acnhapi.com/v1/songs/"
+const defulturl = `https://acnhapi.com/v1/songs/`
 
 fetch(defulturl)
 .then(res => res.json()) // parse response as JSON

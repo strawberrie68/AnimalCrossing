@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>Title in the tab</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yantramanav:wght@400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<nav>
+		<header>
+			<div class="subtitle">
+				<span>ANIMAL CROSSING JAMS</span>
+				<span id="current_date">/span>
+			</div>
+			<div>
+				<input type="text" name="" value="" placeholder="TRACK #">
+				<button id="search" type="button" name="button">SEARCH</button>
+				<button id="random" type="button" name="random">SURPRISE</button>
+			</div>
+		</header>
+		
+		<hr>
+	</nav>
+	
+
+	<div class="title" >
+		<h1 >All songs</h1>
+		<p class="sayings">Explore the tracks from animal crossing. I always thought they are some
+			of the best songs to relax to. Hope you enjoy :)</p>
+	</div>
+	<section class="sectionContainer">
+		<section class="scrollNum">
+			<ul>
+				<li>01</li>
+				<li>04</li>
+				<li>07</li>
+				<li>11</li>
+				<li>14</li>
+				<li>17</li>
+				<li>20</li>
+				<li>23</li>
+				<li>27</li>
+				<li>30</li>
+			</ul>
+		</section>
+		<section>
+		<!-- <div class="grid-container">
+			<div class="grid-item">1</div>
+			<div class="grid-item">2</div>
+			<div class="grid-item">3</div>
+			<div class="grid-item">4</div>
+			<div class="grid-item">5</div>
+			<div class="grid-item">6</div>
+			<div class="grid-item">7</div>
+			<div class="grid-item">8</div>
+			<div class="grid-item">9</div>
+		</div> -->
+		<div id="covers">
+			<ul id="covers2">
+				
+			</ul>
+		</div>
+		</section>
+	</section>
+<div class="musicContainer">
+	<div>
+		<span class="material-symbols-outlined">
+		expand_more
+		</span></div>
+	<div class="nowPlaying">
+		<h5>Now playing</h5>
+		<img id="musicCover" src="img/pokemon.jpeg" alt="">
+	</div>
+	<div>
+		<h4 class="trackNum">Track Num</h4>
+		<h4 class="trackName">Track Name</h4>
+		<audio controls id="music" controls loop>
+			<audio  src="" type="audio/mpeg" >
+			Your browser does not support the audio element.
+			</audio>
+			
+			<p>Click the buttons to play or pause the music.</p>
+			
+			<button onclick="play()" type="button">Play </button>
+			<button onclick="pause()" type="button">Pause</button>
+		</audio>
+	</div>
+</div>
+		
+		
+		
+			
+			<script>
+			var myMusic= document.getElementById("music");
+			function play() {
+			myMusic.play();
+			}
+			
+			function pause() {
+			myMusic.pause();
+			}
+			</script>
+		  
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

@@ -1,0 +1,220 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+    box-sizing: border-box;
+    font-family: 'Yantramanav', sans-serif;
+    margin: 0;
+  }
+  
+  /******************************************
+  /* LAYOUT
+  /*******************************************/
+  img{
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  body {
+    display: block;
+    margin: 100px;
+    background-color: #F2F2F2;
+    width: 80%;
+    
+  
+  }
+  
+  /* nav section */
+  
+  nav{
+    position: fixed;
+    width: 80%;
+    margin: 10px;
+    z-index: 1000;
+    /* background-color:  #F2F2F2; */
+  }
+  
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    
+  
+  }
+  header .subtitle{
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    font-size: 20px;
+  }
+   header .subtitle span+span {
+    font-weight: 400;
+    padding-bottom: 20px;
+   }
+  
+   h1 {
+    font-size:96px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 0;
+   }
+  
+   .sayings {
+    padding-top: 10px;
+  width:50%;
+   }
+  
+   hr {
+    width: 52%;
+    border-width: 2px;
+    background-color: black;
+  
+    
+   }
+   .js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+   
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+  
+   /* section */
+  
+   .title {
+    position: absolute;
+    padding-top:100px;
+   }
+  
+   section{
+    height:500px;
+    padding-top: 180px;
+    
+   }
+  
+   .grid-container {
+    display: grid;
+  }
+  
+  .sectionContainer {
+    display: flex;
+    flex-direction: row;
+  
+  }
+  .scrollNum {
+    position: fixed;
+    padding:10px;
+    padding-top: 230px;
+    bottom: 0;
+    left: 0;
+    margin-left: 50px;
+    font-size: 25px;
+    font-weight: 600;
+    color:#C9C9C9;
+  }
+  
+  /*covers */
+  #cover{
+    /* margin: auto; */
+    position: relative;
+  }
+  #covers ul {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    
+  }
+  
+  #covers ul li {
+    list-style: none;
+    width: 230px;
+    height:230px;
+    background-color: white;
+    margin: 20px;
+    padding: 15px;
+    /* filter: grayscale(0.69); */
+    filter: opacity(0.5);
+  
+   
+  }
+  
+  
+  #covers ul li:hover {
+    filter: none;
+    box-shadow: 0 15px 15px 15px rgba(135, 183, 185, 0.232); ;
+  }
+  
+  #cover ul li div {
+    display: block;
+    width: 20%;
+    height: 100px;
+  }
+  
+  
+  
+  /* scroll numbers */
+  
+  .scrollNum ul li{
+    list-style: none;
+  }
+  
+  /* music player */
+  
+  .musicContainer {
+    width: 350px;
+    background-color: rgb(50, 157, 164, .7); 
+    border-radius: 20px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 500px;
+    padding: 30px;
+    color:white;
+    backdrop-filter: blur(20px);
+    
+    
+  }
+  
+  .musicContainer>div{
+    right: 0;
+  
+  }
+  
+  h5, h4, .trackNum {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .trackName {
+    padding-bottom: 40px;
+  }
+  
+  .nowPlaying h5{
+    font-size: 20px;
+    padding-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+  }
+  
+  .trackNum {
+    color: rgba(186, 255, 255, 0.862);
+    padding-top: 10px;
+  }
+  
+  .trackName {
+    font-size: 24px;
+    letter-spacing: 0.1em;
+    padding-top: 0;
+  }
+  
+  /******************************************
+  /* ADDITIONAL STYLES
+  /*******************************************/
+  

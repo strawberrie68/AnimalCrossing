@@ -43,7 +43,7 @@
   .button-6:hover,
   .button-6:focus {
     border-color: rgba(0, 0, 0, 0.15);
-    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    box-shadow: rgba(201, 250, 255, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
   }
   
@@ -63,6 +63,11 @@
     height: 2.3rem;
     border: 1px solid rgba(174, 174, 174, 0.952);
     margin-right: 0;
+  }
+
+  input::placeholder {
+    padding-left:10px;
+    letter-spacing: 0.1em;
   }
   
   img{

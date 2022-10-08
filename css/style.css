@@ -12,6 +12,64 @@
   /******************************************
   /* LAYOUT
   /*******************************************/
+ 
+  .button-6 {
+    align-items: center;
+    background-color: #D9D9D9;
+    border: 1px solid #D9D9D9;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgb(6, 6, 6);
+    cursor: pointer;
+    display: inline-flex;
+    font-size: 16px;
+    font-weight: 300;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 2.3rem;
+    /* padding: calc(.875rem - 1px) calc(1.5rem - 1px); */
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    margin-right: 15px;
+  }
+  
+  .button-6:hover,
+  .button-6:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(201, 250, 255, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .button-6:hover {
+    transform: translateY(-1px);
+  }
+  
+  .button-6:active {
+    background-color: #F0F0F1;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+  
+  #trackA{
+    height: 2.3rem;
+    border: 1px solid rgba(174, 174, 174, 0.952);
+    margin-right: 0;
+  }
+
+  input::placeholder {
+    padding-left:10px;
+    letter-spacing: 0.1em;
+  }
+  
   img{
     display: block;
     margin: 0 auto;
@@ -177,7 +235,7 @@
     height: 500px;
     padding: 30px;
     color:white;
-    backdrop-filter: blur(20px);
+    backdrop-filter: blur(6px);
     
     
   }

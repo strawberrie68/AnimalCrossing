@@ -10,8 +10,6 @@ A Jukebox where users choose from a library of songs to relax to. Users can pick
 
 ## 👩‍💻 How It's Made:
 
-![](img/ezgif.com-gif-maker.gif)
-
 **Tech used:** HTML, CSS, JavaScript
 
 FrontEnd - For the frontend I wanted to create a minimal yet simple interface where users could still admire the covers of each song. I decided to use a grid and clean lines to create this interface.

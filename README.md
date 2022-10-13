@@ -1,4 +1,4 @@
-# 🎧🎼 Animal Crossing JukeBox Player 
+# 📻 Animal Crossing JukeBox Player 
 
 A Jukebox where users choose from a library of songs to relax to. Users can pick and play their desired song or randomize to discover something new.
 

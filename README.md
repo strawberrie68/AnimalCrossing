@@ -1,4 +1,4 @@
-# Animal Crossing JukeBox Player
+# 🎧🎼 Animal Crossing JukeBox Player 
 
 A Jukebox where users choose from a library of songs to relax to. Users can pick and play their desired song or randomize to discover something new.
 
@@ -6,7 +6,7 @@ A Jukebox where users choose from a library of songs to relax to. Users can pick
 
 ![animal corssing jukebox kk songs](https://postimg.cc/LgsKpqK9)
 
-## How It's Made:
+## 👩‍💻 How It's Made:
 
 **Tech used:** HTML, CSS, JavaScript
 
@@ -15,7 +15,7 @@ FrontEnd - For the frontend I wanted to create a minimal yet simple interface wh
 BackEnd - I used the [animal crossing api] (http://acnhapi.com/) and javascript for the backend
 
 
-## Lessons Learned:
+## 📝 Lessons Learned:
 
 Although it is a pretty simple web based app, I learned that there are optimal ways to set up an API. Certain structures or depending on how an API set up, it could make it harder or less efficient to fetch the data. 
 

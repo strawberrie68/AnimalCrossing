@@ -5,6 +5,7 @@ A Jukebox where users choose from a library of songs to relax to. Users can pick
 **Link to project: ** [https://strawberrie68.github.io/AnimalCrossing/index.html]
 
 [![2022-10-12.png](https://i.postimg.cc/tJQvwR63/2022-10-12.png)](https://postimg.cc/DJ6cbTB0)
+![](/img/ezgif.com-gif-maker)
 
 ## 👩‍💻 How It's Made:
 

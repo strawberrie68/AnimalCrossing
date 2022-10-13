@@ -4,7 +4,7 @@ A Jukebox where users choose from a library of songs to relax to. Users can pick
 
 **Link to project: ** [https://strawberrie68.github.io/AnimalCrossing/index.html]
 
-![animal corssing jukebox kk songs](https://postimg.cc/LgsKpqK9)
+[![2022-10-08.png](https://i.postimg.cc/VvqYXMKC/2022-10-08.png)](https://postimg.cc/LgsKpqK9)
 
 ## 👩‍💻 How It's Made:
 

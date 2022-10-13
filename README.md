@@ -5,10 +5,12 @@ A Jukebox where users choose from a library of songs to relax to. Users can pick
 **Link to project: ** [https://strawberrie68.github.io/AnimalCrossing/index.html]
 
 [![2022-10-12.png](https://i.postimg.cc/tJQvwR63/2022-10-12.png)](https://postimg.cc/DJ6cbTB0)
-![](img/ezgif.com-gif-maker.gif)
+
 
 
 ## 👩‍💻 How It's Made:
+
+![](img/ezgif.com-gif-maker.gif)
 
 **Tech used:** HTML, CSS, JavaScript
 
@@ -25,17 +27,3 @@ I also learned the importance of research and planning. I had perceived notions 
 
 
 
-Footer
-© 2022 GitHub, Inc.
-Footer navigation
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About

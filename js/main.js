@@ -9,13 +9,17 @@ fetch(defulturl)
   for (let cover in data){
     coverUri = data[cover]['image_uri'] ;
     coverId = data[cover]['id']
+    trackTitle = data[cover]['name']['name-USen']
     const li = document.createElement('li');
     const img = document.createElement('img');
     const para = document.createElement('p')
+    const span = document.createElement('p')
     img.src= coverUri;
     para.innerText = coverId
+    span.innerText = trackTitle
     li.appendChild(img);
     li.appendChild(para)
+    li.appendChild(span)
     img.setAttribute("id", coverId)
     document.querySelector('#covers2').appendChild(li);
   
@@ -38,6 +42,7 @@ document.getElementById("current_date").innerHTML = time
 
 document.querySelector('#search').addEventListener('click', getFetch)
 document.querySelector('#random').addEventListener('click', getRandom)
+document.querySelector('.material-symbols-outlined').addEventListener('click', getSmaller)
 
 
 function getFetch(){
@@ -108,3 +113,13 @@ fetch(track)
     });
 }
 )
+
+function getSmaller (){
+  console.log('hello')
+  document.querySelector(".musicContainer").style.height = "100px";
+  document.querySelector("#musicCover").style.minHeight= "50px";
+  document.querySelector("#musicCover").style.width = "fit-content";
+  // document.querySelector('.musicContainer').style.display= 'inline-flex';
+  // document.querySelector('.musicContainer').style.justifyContent = 'space-evenly';
+  document.querySelector(".musicContainer").style.transition = "transform 0.25s ease"
+}

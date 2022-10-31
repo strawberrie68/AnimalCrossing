@@ -17,6 +17,15 @@ FrontEnd - For the frontend I wanted to create a minimal yet simple interface wh
 BackEnd - I used the [animal crossing api] (http://acnhapi.com/) and javascript for the backend
 
 
+## 🏸 Optimizations
+
+Things I would like to fix
+- minimze size of music player
+- able to search for title of sound
+- quick acess to your favorite songs
+- navigatoe that brings to the selected song
+
+
 ## 📝 Lessons Learned:
 
 Although it is a pretty simple web based app, I learned that there are optimal ways to set up an API. Certain structures or depending on how an API set up, it could make it harder or less efficient to fetch the data. 

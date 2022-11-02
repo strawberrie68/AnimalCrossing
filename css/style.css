@@ -227,8 +227,11 @@
   }
   
   /* music player */
-  
-  .musicContainer {
+  #music {
+    padding-left: 15px;
+  }
+
+   .musicContainer {
     width: 350px;
     background-color: rgb(50, 157, 164, .7); 
     border-radius: 20px;
@@ -238,30 +241,69 @@
     margin-right: 10px;
     margin-bottom: 10px;
     height: 500px;
-    padding: 30px;
+    padding: 15px;
     color:white;
     backdrop-filter: blur(6px);
     
     
+  } 
+  .hide {
+    display:none
+  }
+  
+  .musicContainer2 {
+    width: 350px;
+    background-color: rgb(50, 157, 164, .7); 
+    border-radius: 20px;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    padding: 5px;
+    color:white;
+    backdrop-filter: blur(6px);
+    display: inline-flex;
+    
+  }
+  .musicCover{
+    width:200px;
+  }
+  .musicCover2{
+    width:150px;
+  }
+
+  .musicInfo2 {
+    /* padding-bottom: 0; */
+    padding: 0
   }
   
   .musicContainer>div{
     right: 0;
   
   }
-  
-  h5, h4, .trackNum {
-    padding-top: 10px;
-    padding-bottom: 20px;
+  h4 {
     text-align: center;
   }
+  
+  h5,  .trackNum {
+    padding-top: 10px;
+    padding-bottom: 1em;
+    text-align: center;
+  }
+
   .trackName {
-    padding-bottom: 40px;
+    padding-bottom: 1em;
+  }
+
+  .trackName2 {
+    padding-bottom:0;
   }
   
   .nowPlaying h5{
-    font-size: 20px;
-    padding-bottom: 10px;
+    font-size: 1em;
+    padding-bottom: 2em;
     font-weight: 600;
     letter-spacing: 0.1em;
   }
@@ -272,7 +314,7 @@
   }
   
   .trackName {
-    font-size: 24px;
+    font-size: 1.5em;
     letter-spacing: 0.1em;
     padding-top: 0;
   }

@@ -40,15 +40,28 @@ document.getElementById("current_date").innerHTML = time
 
 //button press
 
+// const search = document.querySelector('#search');
+// const random = document.querySelector('#random');
+// const clicked = document.addEventListener('click', (e) => elementP = e.target.id);
+// const userClicked = [search, random, clicked];
+
+// userClicked.forEach(option => {
+//   option.addEventListener('click', getFetch)
+
+// })
+
+
+
 document.querySelector('#search').addEventListener('click', getFetch)
 document.querySelector('#random').addEventListener('click', getRandom)
 document.querySelector('.material-symbols-outlined').addEventListener('click', getSmaller)
 
 
+
 function getFetch(){
   const choice = document.querySelector('input').value
-  console.log(choice)
   const url = `https://acnhapi.com/v1/songs/${choice}`
+  const random = 
 
   fetch(url)
       .then(res => res.json()) // parse response as JSON
@@ -56,9 +69,8 @@ function getFetch(){
         console.log(data)
       
         document.querySelector('.trackName').innerText = data.name["name-USen"]
-
         document.querySelector("audio").src = data.music_uri
-        document.querySelector('#musicCover').src = data.image_uri
+        document.querySelector('.musicCover').src = data.image_uri
         document.querySelector('.trackNum').innerText = ` Track ${choice}`
         document.getElementById('music').play();
       
@@ -79,7 +91,7 @@ function getRandom(){
       
         document.querySelector('.trackName').innerText = data.name["name-USen"]
         document.querySelector("audio").src = data.music_uri
-        document.querySelector('#musicCover').src = data.image_uri
+        document.querySelector('.musicCover').src = data.image_uri
         document.querySelector('.trackNum').innerText = `Track ${randomTrack}`
         document.getElementById('music').play();
       
@@ -91,9 +103,6 @@ function getRandom(){
 
 document.addEventListener('click', (e) =>{
  let elementP = e.target.id
-//  if(elementP !== ''){
-//  console.log(elementP)
-// }
 const track = `https://acnhapi.com/v1/songs/${elementP}`
 
 fetch(track)
@@ -103,7 +112,7 @@ fetch(track)
     
       document.querySelector('.trackName').innerText = data.name["name-USen"]
       document.querySelector("audio").src = data.music_uri
-      document.querySelector('#musicCover').src = data.image_uri
+      document.querySelector('.musicCover').src = data.image_uri
       document.querySelector('.trackNum').innerText = `Track ${elementP}`
       document.getElementById('music').play();
     
@@ -113,13 +122,13 @@ fetch(track)
     });
 }
 )
+//Make music cover smaller
 
 function getSmaller (){
-  console.log('hello')
-  document.querySelector(".musicContainer").style.height = "100px";
-  document.querySelector("#musicCover").style.minHeight= "50px";
-  document.querySelector("#musicCover").style.width = "fit-content";
-  // document.querySelector('.musicContainer').style.display= 'inline-flex';
-  // document.querySelector('.musicContainer').style.justifyContent = 'space-evenly';
-  document.querySelector(".musicContainer").style.transition = "transform 0.25s ease"
+  document.querySelector(".musicContainer").style.transition = "transform 0.25s ease";
+  document.querySelector('.musicContainer').classList.toggle('musicContainer2')
+  document.querySelector('.musicCover').classList.toggle('musicCover2')
+  document.querySelector('.nowPlaying').classList.toggle('hide')
+  document.querySelector('.trackName').classList.toggle('trackName2')
+
 }

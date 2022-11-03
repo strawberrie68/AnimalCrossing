@@ -235,9 +235,9 @@
     border-radius: 20px;
   }
 
-  #music {
-    padding-left: 15px;
-  }
+  /* #music {
+    padding-left: 8px;
+  } */
 
    .musicContainer {
     width: 350px;
@@ -249,7 +249,7 @@
     margin-right: 10px;
     margin-bottom: 10px;
     height: 500px;
-    padding: 20px;
+    padding: 25px;
     color:white;
     backdrop-filter: blur(6px);
     

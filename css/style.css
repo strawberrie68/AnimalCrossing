@@ -205,6 +205,9 @@
   
    
   }
+  #covers ul li .material-symbols-outlined  {
+    float: right;
+  }
   
   
   #covers ul li:hover {
@@ -255,6 +258,12 @@
     
     
   } 
+
+  span.heart{
+    display: flex;
+    justify-content: flex-end;
+    float: right;
+  }
   .hide {
     display:none
   }

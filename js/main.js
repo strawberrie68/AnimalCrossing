@@ -12,15 +12,19 @@ fetch(defulturl)
     trackTitle = data[cover]['name']['name-USen']
     const li = document.createElement('li');
     const img = document.createElement('img');
-    const para = document.createElement('p')
-    const span = document.createElement('p')
+    const para = document.createElement('p');
+    const span = document.createElement('p');
+    const heart = document.createElement('p');
     img.src= coverUri;
-    para.innerText = coverId
-    span.innerText = trackTitle
+    para.innerText = coverId;
+    span.innerText = trackTitle;
+    heart.innerText = 'favorite';
     li.appendChild(img);
-    li.appendChild(para)
-    li.appendChild(span)
-    img.setAttribute("id", coverId)
+    li.appendChild(para);
+    li.appendChild(span);
+    li.appendChild(heart);
+    heart.setAttribute("class", 'heart2 material-symbols-outlined');
+    img.setAttribute("id", coverId);
     document.querySelector('#covers2').appendChild(li);
   
   }
@@ -38,91 +42,60 @@ const d = new Date();
 let time = days[d.getDay()] + " "+ months[d.getMonth()] + " " + d.getDate();
 document.getElementById("current_date").innerHTML = time
 
-//button press
 
-// const search = document.querySelector('#search');
-// const random = document.querySelector('#random');
-// const clicked = document.addEventListener('click', (e) => elementP = e.target.id);
-// const userClicked = [search, random, clicked];
-
-// userClicked.forEach(option => {
-//   option.addEventListener('click', getFetch)
-
-// })
-
-
+//Click Events
 
 document.querySelector('#search').addEventListener('click', getFetch)
 document.querySelector('#random').addEventListener('click', getRandom)
 document.querySelector('.material-symbols-outlined').addEventListener('click', getSmaller)
+//document.querySelector('.heart2').addEventListener('click', favorite)
 
+//Function to get song info
 
+function songsFinder(url){
+
+  fetch(url)
+  .then(res => res.json()) // parse response as JSON
+  .then(data => {
+    console.log(data)
+  
+    document.querySelector('.trackName').innerText = data.name["name-USen"]
+    document.querySelector("audio").src = data.music_uri
+    document.querySelector('.musicCover').src = data.image_uri
+    document.querySelector('.trackNum').innerText = ` Track ${data.id}`
+    document.getElementById('music').play();
+  
+  })
+  .catch(err => {
+      console.log(`error ${err}`)
+  });
+}
+
+//Convert Click to song link
 
 function getFetch(){
   const choice = document.querySelector('input').value
   const url = `https://acnhapi.com/v1/songs/${choice}`
-  const random = 
+  songsFinder(url);
 
-  fetch(url)
-      .then(res => res.json()) // parse response as JSON
-      .then(data => {
-        console.log(data)
-      
-        document.querySelector('.trackName').innerText = data.name["name-USen"]
-        document.querySelector("audio").src = data.music_uri
-        document.querySelector('.musicCover').src = data.image_uri
-        document.querySelector('.trackNum').innerText = ` Track ${choice}`
-        document.getElementById('music').play();
-      
-      })
-      .catch(err => {
-          console.log(`error ${err}`)
-      });
 }
 
 function getRandom(){
   let randomTrack = Math.floor(Math.random()*95)
-  const track = `https://acnhapi.com/v1/songs/${randomTrack}`
+  const url = `https://acnhapi.com/v1/songs/${randomTrack}`
+  songsFinder(url);
 
-  fetch(track)
-      .then(res => res.json()) // parse response as JSON
-      .then(data => {
-        console.log(data)
-      
-        document.querySelector('.trackName').innerText = data.name["name-USen"]
-        document.querySelector("audio").src = data.music_uri
-        document.querySelector('.musicCover').src = data.image_uri
-        document.querySelector('.trackNum').innerText = `Track ${randomTrack}`
-        document.getElementById('music').play();
-      
-      })
-      .catch(err => {
-          console.log(`error ${err}`)
-      });
 }
 
 document.addEventListener('click', (e) =>{
  let elementP = e.target.id
-const track = `https://acnhapi.com/v1/songs/${elementP}`
+const url = `https://acnhapi.com/v1/songs/${elementP}`
+songsFinder(url);
 
-fetch(track)
-    .then(res => res.json()) // parse response as JSON
-    .then(data => {
-      console.log(data)
-    
-      document.querySelector('.trackName').innerText = data.name["name-USen"]
-      document.querySelector("audio").src = data.music_uri
-      document.querySelector('.musicCover').src = data.image_uri
-      document.querySelector('.trackNum').innerText = `Track ${elementP}`
-      document.getElementById('music').play();
-    
-    })
-    .catch(err => {
-        console.log(`error ${err}`)
-    });
-}
-)
-//Make music cover smaller
+})
+
+
+//Make music player smaller
 
 function getSmaller (){
   document.querySelector(".musicContainer").style.transition = "transform 0.25s ease";
@@ -130,5 +103,11 @@ function getSmaller (){
   document.querySelector('.musicCover').classList.toggle('musicCover2')
   document.querySelector('.nowPlaying').classList.toggle('hide')
   document.querySelector('.trackName').classList.toggle('trackName2')
+
+}
+
+//Favorite Songs
+
+function favorite(){
 
 }

@@ -12,23 +12,22 @@ A Jukebox where users choose from a library of songs to relax to. Users can pick
 
 **Tech used:** HTML, CSS, JavaScript
 
-FrontEnd - For the frontend I wanted to create a minimal yet simple interface where users could still admire the covers of each song. I decided to use a grid and clean lines to create this interface.
+FrontEnd - For the Frontend I wanted to create a minimal yet simple interface where users could still admire the covers of each song. I decided to use a grid and clean lines to create this interface.
 
-BackEnd - I used the [animal crossing api] (http://acnhapi.com/) and javascript for the backend
+BackEnd - I used the [Animal Crossing API](http://acnhapi.com/) and javascript for the backend
 
 
 ## 🏸 Optimizations
 
 Things I would like to fix
-- minimze size of music player
-- able to search for title of sound
-- quick acess to your favorite songs
-- navigatoe that brings to the selected song
+- Ability to search for the title of the song
+- Quick access to your favorite songs
+- Navigate to the selected song
 
 
 ## 📝 Lessons Learned:
 
-Although it is a pretty simple web based app, I learned that there are optimal ways to set up an API. Certain structures or depending on how an API set up, it could make it harder or less efficient to fetch the data. 
+Although it is a pretty simple web-based app, I learned that there are optimal ways to set up an API. Certain structures or depending on how an API set up, it could make it harder or less efficient to fetch the data. 
 
 I also learned the importance of research and planning. I had perceived notions that users will use the app in one way, but they end up wanting to use it another way. For example, I thought the user would pick the songs based on the track number. Instead, the user wanted to find the track by the track title. User needs should always be put first, or else the app is rendered useless.
 
